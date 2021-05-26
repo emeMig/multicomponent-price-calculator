@@ -1,4 +1,4 @@
-Demo: Multicomponent-price-calculator
+Demo: VUE / Vuex Multicomponent-price-calculator
 
 ## Project setup
 ```
