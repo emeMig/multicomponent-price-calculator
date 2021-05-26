@@ -1,4 +1,4 @@
-# 5-calculator
+Demo: VUE / Vuex Multicomponent-price-calculator
 
 ## Project setup
 ```
