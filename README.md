@@ -1,5 +1,7 @@
 Demo: VUE / Vuex Multicomponent-price-calculator
 
+https://ememig.github.io/multicomponent-price-calculator/
+
 ## Project setup
 ```
 npm install
