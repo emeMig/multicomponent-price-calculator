@@ -1,4 +1,4 @@
-# 5-calculator
+Demo: Multicomponent-price-calculator
 
 ## Project setup
 ```
