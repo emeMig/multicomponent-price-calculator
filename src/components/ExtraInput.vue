@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="title">Extras</h4>
+    <h4 class="title">Multiopción</h4>
     <div class="field is-grouped is-grouped-center">
       <span class="control" v-for="item in extras" v-bind:key="item.name">
         <label class="checkbox" :for="item.name">

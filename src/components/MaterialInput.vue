@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4 class="title">Material</h4>
+        <h4 class="title">Opción alternativa</h4>
         <div class="field">
             <div class="control">
                 <label class="radio" v-for="item in materials" v-bind:key="item.name">

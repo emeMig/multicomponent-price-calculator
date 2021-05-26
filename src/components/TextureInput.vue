@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="title">Textura</h4>
+    <h4 class="title">Opción visual</h4>
     <div class="columns is-mobile">
       <div class="column is-one-quarter">
         <div class="field">
