@@ -2,6 +2,8 @@
     <section class="section">
         <div class="columns is-mobile">
             <div class="column is-three-fifths is-offset-one-fifth">
+              <steps></steps>
+
 
                 <header class="bd-header">
                     <div class="bd-header-titles">
@@ -63,6 +65,7 @@
 import MaterialInput from './MaterialInput'
 import ExtraInput from './ExtraInput'
 import TextureInput from './TextureInput'
+import Steps from './Steps'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -70,7 +73,8 @@ export default {
   components: {
     MaterialInput,
     ExtraInput,
-    TextureInput
+    TextureInput,
+    Steps
   },
   data() {
     return {
