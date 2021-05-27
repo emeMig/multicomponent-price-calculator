@@ -1,9 +1,13 @@
 <template>
     <section class="section">
+
+              
+
+
         <div class="columns is-mobile">
             <div class="column is-three-fifths is-offset-one-fifth">
-              <steps></steps>
 
+                <steps></steps>
 
                 <header class="bd-header">
                     <div class="bd-header-titles">
@@ -22,12 +26,12 @@
         
                 <extra-input ref="extras" class='bloque'></extra-input>
                 
-                <h4 class="title">Opción genérica</h4>
+                <h4 class="title">Opción customizable</h4>
                 <div class="field is-grouped is-grouped-center">
                     <span class="control">
                         <label class="checkbox" for="gift">
                             <input type="checkbox" name="gift" v-model="gift">
-                            Marcar opción unitaria
+                            Marcar opción customizable
                         </label>
                     </span>
                 </div>

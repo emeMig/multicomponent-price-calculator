@@ -53,6 +53,7 @@ export default {
     getTextureImage: function() {
       if (this.texture == "texture-1") return "img/red.jpg";
       if (this.texture == "texture-2") return "img/orange.jpg";
+      if (this.texture == "texture-3") return "img/blue.jpg";
       return "";
     }
   }

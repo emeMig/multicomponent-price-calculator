@@ -1,5 +1,5 @@
 <template>
-    <ul class="steps">
+    <ul class="steps is-horizontal">
         <li class="steps-segment">
             <a href="#" class="steps-marker">
                 <span class="icon">
@@ -14,17 +14,14 @@
                 </span>                
             </a>
         </li>
-        <li class="steps-segment is-active">
+        <li class="steps-segment is-active has-gaps">
             <span class="steps-marker">
                 <i class="fas fa-shopping-cart"></i>
             </span>
         </li>
         <li class="steps-segment">
-            <span class="steps-marker">4
-            </span>
-        </li>
-        <li class="steps-segment">
-            <span class="steps-marker">5
+            <span class="steps-marker is-hollow">
+                <i class="fas fa-euro-sign"></i>
             </span>
         </li>
     </ul>
@@ -37,5 +34,10 @@ export default {
 </script>
 
 <style>
-
+    .fas{
+        margin-left: -2px !important;
+    }
+    .fa-euro-sign {
+        color: #DBDBDB
+    }
 </style>

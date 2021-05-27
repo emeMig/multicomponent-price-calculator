@@ -33,6 +33,11 @@ export default {
                 amount: 10,
                 label: 'color2'
             },
+            {
+                name: 'texture-3',
+                amount: 20,
+                label: 'color3'
+            },
         ],
         extras: [
             {
