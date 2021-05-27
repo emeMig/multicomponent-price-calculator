@@ -1,6 +1,7 @@
-Demo: VUE / Vuex Multicomponent-price-calculator
+Demo: VUE / Vuex Multicomponent-price-calculator by emeMig
 
-https://ememig.github.io/multicomponent-price-calculator/
+Working Demo: https://cranky-cori-0af68e.netlify.app
+
 
 ## Project setup
 ```
