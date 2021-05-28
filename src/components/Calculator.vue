@@ -43,15 +43,15 @@
                     </div>
                 </div>
 
-                <h3 class="title is-3">Total: {{ calculeTotal }} <span></span> €</h3>
+                <h3 class="title is-2">Total: {{ calculeTotal }} <span></span> €</h3>
         
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="button is-link" v-on:click="sendCalc">Enviar</button>
+                        <button class="button is-success " v-on:click="sendCalc">Enviar</button>
                     </div>
                     <div class="control">
-                        <button class="button is-text" v-on:click="resetCalc">Reiniciar</button>
+                        <button class="button is-info" v-on:click="resetCalc">Reiniciar</button>
                     </div>
                 </div>
         
@@ -126,8 +126,10 @@ export default {
 .bd-header {
     margin-bottom: 2rem;
     padding: 1rem;
+    border-radius: 5px;
     background-color: #ddd;
 }
+
 .bloque {
   margin: 40px 0
 }
