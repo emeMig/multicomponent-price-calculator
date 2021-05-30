@@ -1,7 +1,16 @@
 <template>
   <div>
-    <h4 class="title">Multiopción</h4>
-    <div class="field is-grouped is-grouped-center">
+    <div class="columns">
+      <div class="column is-11">
+          <h4 class="title">MultiOpción</h4>
+      </div>
+      <div class="column">
+          <button class="button is-success is-small" @click="show = !show">
+              <i class="fas fa-arrow-down"></i>
+          </button>
+      </div>
+    </div> 
+    <div class="field dropper is-grouped is-grouped-center animate__animated animate__slideInDown" v-if="show" >
       <span class="control" v-for="item in extras" v-bind:key="item.name">
         <label class="checkbox" :for="item.name">
           <input
@@ -24,7 +33,8 @@ export default {
   name: "ExtraInput",
   data: function() {
     return {
-      extra: []
+      extra: [],
+      show: false
     };
   },
   methods: {

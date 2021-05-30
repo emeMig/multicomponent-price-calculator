@@ -1,9 +1,5 @@
 <template>
     <section class="section">
-
-              
-
-
         <div class="columns is-mobile">
             <div class="column is-three-fifths is-offset-one-fifth">
 
@@ -133,4 +129,13 @@ export default {
 .bloque {
   margin: 40px 0
 }
+
+.dropper {
+  animation-duration: .5s;
+}
+@keyframes slideInDown {
+    0% {
+      transform: translate3d(0, -40%,0)
+    }
+  }
 </style>

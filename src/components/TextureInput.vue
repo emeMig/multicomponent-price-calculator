@@ -1,7 +1,16 @@
 <template>
   <div>
-    <h4 class="title">Opción visual</h4>
-    <div class="columns is-mobile">
+    <div class="columns">
+      <div class="column is-11">
+          <h4 class="title">Opción visual</h4>
+      </div>
+      <div class="column">
+          <button class="button is-success is-small" @click="show = !show">
+              <i class="fas fa-arrow-down"></i>
+          </button>
+      </div>
+    </div>  
+    <div class="columns dropper dropper-ex is-mobile field animate__animated animate__slideInDown" v-if="show" >
       <div class="column is-one-quarter">
         <div class="field">
           <div class="control">
@@ -34,7 +43,8 @@ export default {
   data: function() {
     return {
       texture: "texture-0",
-      image: ""
+      image: "",
+      show: false
     };
   },
   methods: {
@@ -61,5 +71,13 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+.dropper-ex {
+  margin-top: 15px;
+}
+
+
+
+
+
 </style>
