@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="columns">
+    <div class="columns head">
       <div class="column is-11">
           <h4 class="title">MultiOpción</h4>
       </div>
       <div class="column">
-          <button class="button is-success is-small" @click="show = !show">
+          <button class="button is-success is-inverted " @click="show = !show">
               <i class="fas fa-arrow-down"></i>
           </button>
       </div>

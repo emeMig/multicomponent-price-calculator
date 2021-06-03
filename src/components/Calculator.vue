@@ -130,12 +130,28 @@ export default {
   margin: 40px 0
 }
 
-.dropper {
-  animation-duration: .5s;
+.head{
+    margin: 0px !important;
+    margin-bottom: 2rem;
+    padding: 5px 10px;
+    background-color: #23D160;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1
 }
+
+.head h4 {
+  color:white;
+}
+
+.dropper {
+  animation-duration: .6s;
+  margin-top: 15px !important;
+}
+
 @keyframes slideInDown {
     0% {
-      transform: translate3d(0, -40%,0)
+      transform: translate3d(0, -70%,0)
     }
   }
 </style>
