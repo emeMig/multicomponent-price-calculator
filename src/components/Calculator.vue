@@ -145,7 +145,7 @@ export default {
 
 @keyframes slideInDown {
     0% {
-      transform: translate3d(0, -70%,0)
+      transform: translate3d(0, -50%,0)
     }
   }
 
