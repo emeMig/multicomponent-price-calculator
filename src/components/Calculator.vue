@@ -7,22 +7,24 @@
 
                 <header class="bd-header">
                     <div class="bd-header-titles">
-                        <h1 class="title">
+                        <h1 class="title is-4">
                             Calculadora Multicomponente
                         </h1>
-                        <p class="subtitle is-4">
-                            Calculo automático del precio a traves de distintos componentes con opciones de selección
+                        <p class="subtitle is-5">
+                            Calculo automático del precio de producto mediante componentes con distintas opciones de selección
                         </p>
                     </div>
                 </header>
 
-                <material-input ref="material" class='bloque'></material-input>
+                <material-input ref="material" class='bloque' />
 
-                <texture-input ref="texture" class='bloque'></texture-input>
+                <texture-input ref="texture" class='bloque' />
         
-                <extra-input ref="extras" class='bloque'></extra-input>
+                <extra-input ref="extras" class='bloque' />
+
+                <custom-input ref="custom" class="bloque" />
                 
-                <h4 class="title">Opción customizable</h4>
+                <!-- <h4 class="title is-4 mt-6">Opción customizable</h4>
                 <div class="field is-grouped is-grouped-center">
                     <span class="control">
                         <label class="checkbox" for="gift">
@@ -31,17 +33,14 @@
                         </label>
                     </span>
                 </div>
-
                 <div class="field" v-if="isGifted">
                     <label class="label" for="gift-message">Introducir mensaje</label>
                     <div class="control">
                         <textarea class="textarea" name="gift-message" placeholder="Mensaje opción unitaria" v-model="giftMessage"></textarea>
                     </div>
-                </div>
+                </div> -->
 
-                <h3 class="title is-2 totalPrice">Total: {{ calculeTotal }} <span></span> €</h3>
-        
-
+                <h3 class="title is-3 totalPrice">Total: {{ calculeTotal }} <span></span> €</h3>
                 <div class="field is-grouped">
                     <div class="control">
                         <button class="button is-success " v-on:click="sendCalc">Enviar</button>
@@ -50,12 +49,8 @@
                         <button class="button is-info" v-on:click="resetCalc">Reiniciar</button>
                     </div>
                 </div>
-        
-
             </div>
         </div>
-
-
     </section>
 </template>
 
@@ -65,7 +60,9 @@
 import MaterialInput from './MaterialInput'
 import ExtraInput from './ExtraInput'
 import TextureInput from './TextureInput'
+import CustomInput from'./CustomInput'
 import Steps from './Steps'
+
 import { mapGetters } from 'vuex'
 
 export default {
@@ -74,6 +71,7 @@ export default {
     MaterialInput,
     ExtraInput,
     TextureInput,
+    CustomInput,
     Steps
   },
   data() {
@@ -91,14 +89,7 @@ export default {
       this.$refs.material.resetDefault()
       this.$refs.texture.resetDefault()
       this.$refs.extras.resetDefault()
-      this.gift = false
-      this.giftMessage = null
-    },
-    getPrices: function(attribute) {
-      const prices = {
-        gift: 7.5
-      };
-      return prices[attribute];
+      this.$refs.custom.resetDefault()
     }
   },
   computed: {
@@ -108,12 +99,12 @@ export default {
       for( const prop in this.sumProducts) {
         totalAmount += this.sumProducts[prop]
       }
-      totalAmount += this.gift ? this.getPrices('gift') : 0
+      // totalAmount += this.gift ? this.getPrices('gift') : 0
       return totalAmount.toFixed(2).replace('.' , ',')
     },
-    isGifted: function() {
-      return !!this.gift;
-    },
+    // isGifted: function() {
+    //   return !!this.gift;
+    // },
   }
 }
 </script>

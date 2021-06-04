@@ -1,15 +1,7 @@
 <template>
   <div>
-    <div class="columns head">
-      <div class="column is-11">
-          <h4 class="title">Opción visual</h4>
-      </div>
-      <div class="column">
-          <button class="button is-success is-inverted" @click="show = !show">
-              <i class="fas fa-arrow-down"></i>
-          </button>
-      </div>
-    </div>  
+    <head-title text="Opcion Visual" @showChange="show = !show" />
+    
     <div class="columns dropper is-mobile field animate__animated animate__slideInDown" v-if="show" >
       <div class="column is-one-quarter">
         <div class="field">
@@ -37,9 +29,13 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
+import HeadTitle from './HeadTitle'
 
 export default {
   name: "TextureInput",
+  components: {
+    HeadTitle
+  },
   data: function() {
     return {
       texture: "texture-0",

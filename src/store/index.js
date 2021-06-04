@@ -10,7 +10,7 @@ export const store = new Vuex.Store({
             material: 10,
             texture: 0,
             extras: 0,
-            gift: 0
+            custom: 0
         },
         products
     },
@@ -24,8 +24,8 @@ export const store = new Vuex.Store({
         SUM_EXTRAS (state, payload) {  
             state.sumProducts.extras = payload         
         },
-        SUM_GIFT (state, payload) {  
-            state.sumProducts.gift = payload         
+        SUM_CUSTOM (state, payload) {  
+            state.sumProducts.custom = payload         
         }
     },
     actions: {
@@ -38,8 +38,8 @@ export const store = new Vuex.Store({
         sumExtras(context,amount) {
             context.commit('SUM_EXTRAS', amount)
         },
-        sumGift(context,amount) {
-            context.commit('SUM_GIFT', amount)
+        sumCustom(context,amount) {
+            context.commit('SUM_CUSTOM', amount)
         },
     },
     getters: {
@@ -51,6 +51,9 @@ export const store = new Vuex.Store({
         },
         extras(state) {
             return state.products.extras
+        },
+        customOption(state) {
+            return state.products.customOption
         },
         sumProducts(state) {
             return state.sumProducts

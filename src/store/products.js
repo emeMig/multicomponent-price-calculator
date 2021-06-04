@@ -56,6 +56,9 @@ export default {
                 label: 'Multiopcion3'
             }    
         ],
+        customOption: {
+                price: 8
+            }
     }
 
 

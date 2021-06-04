@@ -1,15 +1,6 @@
 <template>
     <div>        
-        <div class="columns head">
-            <div class="column is-11">
-                <h4 class="title">Opción alternativa</h4>
-            </div>
-            <div class="column">
-                <button class="button is-success is-inverted " @click="show = !show">
-                    <i class="fas fa-arrow-down"></i>
-                </button>
-            </div>
-        </div>    
+        <head-title text="Opcion Alternativa" @showChange="show = !show" />
         <div class="field dropper animate__animated animate__slideInDown" v-if="show" >
             <div class="control">
                 <ul>
@@ -27,8 +18,12 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
+import HeadTitle from './HeadTitle'
 export default {
     name: 'MaterialInput',
+    components: {
+        HeadTitle
+    },
     data() {
         return {
             material: 'material-1',
