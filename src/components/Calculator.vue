@@ -3,7 +3,7 @@
         <div class="columns is-mobile">
             <div class="column is-three-fifths is-offset-one-fifth">
 
-                <steps></steps>
+                <steps id="steps-bar"></steps>
 
                 <header class="bd-header">
                     <div class="bd-header-titles">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <h3 class="title is-2">Total: {{ calculeTotal }} <span></span> €</h3>
+                <h3 class="title is-2 totalPrice">Total: {{ calculeTotal }} <span></span> €</h3>
         
 
                 <div class="field is-grouped">
@@ -119,15 +119,18 @@ export default {
 </script>
 
 <style>
+#steps-bar {
+  margin-bottom: 3rem;
+}
 .bd-header {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     padding: 1rem;
     border-radius: 5px;
     background-color: #ddd;
 }
 
 .bloque {
-  margin: 40px 0
+  margin: 20px 0
 }
 
 .head{
@@ -154,4 +157,8 @@ export default {
       transform: translate3d(0, -70%,0)
     }
   }
+
+.totalPrice {
+  margin-top: 3rem
+}  
 </style>
