@@ -11,18 +11,20 @@
       </div>
     </div> 
     <div class="field dropper is-grouped is-grouped-center animate__animated animate__slideInDown" v-if="show" >
-      <span class="control" v-for="item in extras" v-bind:key="item.name">
-        <label class="checkbox" :for="item.name">
-          <input
-            type="checkbox"
-            :name="item.name"
-            :value="item.name"
-            v-model="extra"
-            @change="updateAmount"
-          />
-          {{item.label}}
-        </label>
-      </span>
+      <ul>
+        <li class="control" v-for="item in extras" v-bind:key="item.name">
+          <label class="checkbox" :for="item.name">
+            <input
+              type="checkbox"
+              :name="item.name"
+              :value="item.name"
+              v-model="extra"
+              @change="updateAmount"
+            />
+              {{item.label}}
+          </label>
+        </li>
+      </ul>
     </div>
   </div>
 </template>

@@ -12,10 +12,14 @@
         </div>    
         <div class="field dropper animate__animated animate__slideInDown" v-if="show" >
             <div class="control">
-                <label class="radio" v-for="item in materials" v-bind:key="item.name">
-                    <input type="radio" name="material" :value="item.name" v-model="material" @change="updateAmount($event.target.value)">
-                    {{item.label}}
-                </label>
+                <ul>
+                    <li v-for="item in materials" v-bind:key="item.name">
+                        <label class="radio" >
+                            <input type="radio" name="material" :value="item.name" v-model="material" @change="updateAmount($event.target.value)">
+                            {{item.label}} 
+                        </label>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>    
