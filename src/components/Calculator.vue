@@ -11,7 +11,7 @@
                             Calculadora Multicomponente
                         </h1>
                         <p class="subtitle is-4">
-                            Calculo automático del precio a traves de distintos componentes de selección
+                            Calculo automático del precio a traves de distintos componentes con opciones de selección
                         </p>
                     </div>
                 </header>
